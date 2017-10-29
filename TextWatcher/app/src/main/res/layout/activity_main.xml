@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yoonjaecho.week2_practice2.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/inputCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="0 / 80 바이트"
+            android:textColor="#ffff00ff"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/inputMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/inputCount"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:gravity="top"
+
+            android:maxLength="80"
+            android:textSize="36dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="전송"
+                android:textSize="18dp"/>
+
+            <Button
+                android:id="@+id/closeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="닫기"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
