@@ -1,2 +1,5 @@
-# Fall_2017_MobileSoftware
-Fall_2017_MobileSoftware
+# [Fall, 2017] CNU Mobile Software Class
+
+### Development tools : Android Studio
+### Contents
+####
