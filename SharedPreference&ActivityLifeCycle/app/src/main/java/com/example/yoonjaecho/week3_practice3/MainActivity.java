@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(this, "Main: onRestart 호출됨", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
         Toast.makeText(this, "Main: onStart 호출됨", Toast.LENGTH_SHORT).show();
