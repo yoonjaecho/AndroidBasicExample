@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yoonjaecho.socketprogramming.MainActivity">
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="버튼을 누르면 소켓 연결됩니다 메시지는 로그를 혹인하세요."
+        tools:context=".MainActivity"/>
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text01"
+        android:text="소켓 연결하기"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:context=".MainActivity"/>
+
+    <EditText
+        android:id="@+id/input01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button01"
+        android:hint="연결할 소켓 서버 IP"
+        android:text="127.0.0.1"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        tools:context=".MainActivity"/>
+
+</RelativeLayout>
