@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    tools:context="com.example.yoonjaecho.sqliteexample.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <Button
+            android:id="@+id/createDatabaseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dp"
+            android:text="데이터베이스 생성"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/databaseNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="데이터베이스 이름 입력"
+            android:text="customer.db"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <Button
+            android:id="@+id/createTableButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dp"
+            android:text="테이블 생성"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/tableNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="테이블 이름을 입력"
+            android:text="employee"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="상태 : "
+        android:textSize="14dp"/>
+
+</LinearLayout>
